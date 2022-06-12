@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Stories</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">User Stories</h1>
+        <p id="description">Tell other users some stories about your pet</p>
+    </header>
+
+    <main>
+        <div id="container">
+        <form id="survey-form">
+                <fieldset>
+                    <label id="name-label">Name: <input type="text" name="name" id="name" placeholder="Enter your name" required></label>
+                    <label id="email-label">Email: <input type="email" name="email" id="email" placeholder="Enter your Email" required></label>
+                    <label id="number-label">Age (optional): <input type="number" name="age" id="number" min="8" max="105" placeholder="Enter  your age"></label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="dropdown">Why did you adopt your dog?</label>
+                    <select name="selection" id="dropdown" required>
+                        <option value="">Choose and option</option>
+                        <option value="1">For a birthday present</option>
+                        <option value="2">I needed a change in my life</option>
+                        <option value="3">I wanted to encourage other people to adopt a dog</option>
+                        <option value="4">I wanted to give him a second chance</option>
+                    </select>
+
+                    <p>Would you recommend our animal shelter?</p>
+                    <label>
+                    <input type="radio" name="recomendation" id="radio-yes" value="definitely" class="inline" required>
+                        Definitely
+                    </label>
+                    
+                    <label>
+                    <input type="radio" name="recomendation" id="radio-no" value="maybe" class="inline">
+                        Maybe
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <p>What's your pet personality</p>
+                    <label>
+                        <input type="checkbox" name="confident" id="confident" class="inline" value="confident" checked>
+                        Confident
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="energetic" id="energetic" class="inline" value="energetic">
+                        Energetic
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="shy" id="shy" class="inline" value="shy">
+                        Shy
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="lazy" id="lazy" class="inline" value="lazy">
+                        Lazy
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <p>Leave a comment telling everyone about your pet</p>
+                    <textarea name="" id="" cols="30" rows="5" minlength="25" required></textarea>
+                </fieldset>
+                <input type="submit" value="Submit" id="submit"> 
+        </form>
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer">The comment won't show your Email</p>
+    </footer>
+</body>
+</html>
